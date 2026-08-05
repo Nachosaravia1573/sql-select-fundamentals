@@ -1,1 +1,5 @@
-
+--1)
+-- Utilizar el comando SELECT * no es muy util debido a que nos devuelve la tabla completa y no nos permite especificar el campo o la caracteristica que necesitas optimizar su rendimiento.
+-- Realizar consultas de la tabla completa con SELECT * puede generar sobrecarga de los reportes en momentos inadecuados.
+-- 2)
+-- Los alias (con el comando AS en SQL)  permiten trasladar el lenguaje tecnico de data architect a algun stakeholder que necesite la informacion para tomar decisiones. A modo de ejemplo suponemos una tabla con el campo total_amount. Alguien que no es parte del equipo del diseño de los datos podria pensar que se trata de de cantidades de productos o cantidades de insumos lo cual puede generar confusiones. En ese caso conviene usar el comando, SELECT * total_amount AS Monto_total FROM table
